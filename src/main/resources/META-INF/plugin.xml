@@ -1,0 +1,36 @@
+<idea-plugin>
+    <id>com.dcasadevall.jira_todo_tasks</id>
+    <name>JIRA Todo Tasks</name>
+    <vendor email="dcasadevall@me.com" url="http://www.dcasadevall.com">Daniel Casadevall Pino</vendor>
+
+    <description><![CDATA[
+    Plugin used to create and view JIRA tasks associated to TODOs in source code.
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <projectService serviceInterface="com.dcasadevall.jiratodos.config.JiraConfiguration"
+          serviceImplementation="com.dcasadevall.jiratodos.config.JiraConfigurationService" />
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="com.dcasadevall.jiratodos.config.ConfigureJiraAction"
+          class="com.dcasadevall.jiratodos.config.ConfigureJiraAction" text="Configure JIRA"
+          description="Shows the menu that allows a user to configure their JIRA connection">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
+        <action id="com.dcasadevall.jiratodos.editor.CreateTaskFromTodoEditorPopupAction"
+          class="com.dcasadevall.jiratodos.editor.CreateTaskFromTodoEditorPopupAction"
+          text="JIRA Task"
+          description="Shows the editor popup menu that allows transforming a TODO into a JIRA Task">
+            <add-to-group group-id="GenerateGroup" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>

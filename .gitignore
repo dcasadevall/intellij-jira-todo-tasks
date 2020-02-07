@@ -1,0 +1,10 @@
+# ignore mac stuff
+*.DS_Store
+
+# IntelliJ stuff
+.idea/
+*.iml
+
+# Ignore gradle bootstrap and build products
+build/
+.gradle/
