@@ -22,6 +22,6 @@ intellij {
 }
 patchPluginXml {
     changeNotes """
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>"""
+        Initial release of the plugin. Opens JIRA url when selecting a TODO: line and
+        pressing on the "Create JIRA Task" in the Generate Menu."""
 }

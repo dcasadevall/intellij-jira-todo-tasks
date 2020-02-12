@@ -9,9 +9,19 @@
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
-    <!-- uncomment to enable plugin in all products
-    <depends>com.intellij.modules.lang</depends>
-    -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Description of changes in the latest version of the plugin.
+         Displayed in the "Plugins" settings dialog and the plugin repository Web interface.
+         Simple HTML elements can be included between <![CDATA[  ]]> tags.  -->
+    <change-notes>Initial release of the plugin. Opens JIRA url when selecting a TODO: line and
+        pressing on the "Create JIRA Task" in the Generate Menu.
+    </change-notes>
+
+    <!-- Plugin version
+     Recommended format is BRANCH.BUILD.FIX (MAJOR.MINOR.FIX)
+     Displayed in the "Plugins" settings dialog and the plugin repository Web interface.  -->
+    <version>1.0.0</version>
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
