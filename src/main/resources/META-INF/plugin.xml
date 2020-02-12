@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.dcasadevall.jira_todo_tasks</id>
     <name>JIRA Todo Tasks</name>
-    <vendor email="dcasadevall@me.com" url="http://www.dcasadevall.com">Daniel Casadevall Pino</vendor>
+    <vendor email="dcasadevall@me.com" url="https://github.com/dcasadevall">Daniel Casadevall Pino</vendor>
 
     <description><![CDATA[
     Plugin used to create and view JIRA tasks associated to TODOs in source code.
